@@ -1,0 +1,57 @@
+.playlist-block{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.playlist-item{
+    position: relative;
+    margin: 20px;
+    overflow: hidden; 
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    flex: 0 1 50%;
+    border-radius: 15px;
+}
+
+.playlists{
+    justify-content: center;  
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.playlist-title{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    top: 70%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transform: translateY(100px);
+    transition: transform 0.5s;
+}
+
+.playlist-img{
+    overflow: hidden;  /* Ensure the image takes the full width of its container */ 
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.playlist-item:hover .playlist-img{
+    transform: scale(1.05);
+}
+
+.playlist-item:hover .playlist-title{
+    transform: translateY(0);
+}
+
+.playlist-block-title{
+    padding: 40px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    color: #123c69;
+}

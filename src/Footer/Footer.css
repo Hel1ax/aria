@@ -1,0 +1,83 @@
+.footer {
+    grid-area: footer;
+    background-color: #bab2b5;
+    text-align: left;
+    padding: 20px 110px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "about links contact";
+    padding-bottom: 120px;
+    color: #1E555C;
+}
+
+.contact {
+    grid-area: contact;
+}
+.about{
+    grid-area: about;
+}
+.links{
+    grid-area: links;
+}
+
+.footer-content{
+    padding: 20px;
+    
+}
+
+@media (max-width: 818px){
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "links contact"
+        "about about";
+        padding-bottom:70px;
+    }
+    
+}
+
+@media (max-width: 512px){
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        grid-template-areas: 
+        "links"
+        "contact"
+        "about";
+        
+    }
+}
+
+@media (max-width: 588px){
+    .footer {
+        padding-bottom:130px;
+    }
+    
+}
+
+
+ul li a{
+    color: #323232;
+    text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+
+.links ul li,
+.shop ul li,
+.contact ul li{
+    padding-top: 4px;
+}
+
+.links ul li a:hover,
+.shop ul li a:hover,
+.contact ul li a:hover{
+    color: #F15152;
+}

@@ -1,0 +1,44 @@
+.volume_button{
+    background-color: inherit;
+    color: #2e2e2e;
+    width: 30px;
+    font-size: 2.5em;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.volume_control{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    flex-direction: row-reverse;
+}
+
+.volume_control input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    height: 7px;
+    background-color: #f5e7e7;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: -4px
+}
+
+.volume_control input[type='range']::-webkit-slider-thumb {
+    width: 1px;
+    -webkit-appearance: none;
+    background: #123c69;
+    box-shadow: -100px 0 0 100px #123c69;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px){
+    
+    .volume_control{
+        max-width: 120px;
+    }
+}
+

@@ -1,0 +1,11 @@
+.video-block iframe{
+    width: 640px;
+    height: 480px;
+}
+
+
+.video-block{
+    text-align: center;
+    border: none;
+}
+
