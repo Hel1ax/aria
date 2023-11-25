@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aria/static/css/main.2f5d045f.css",
+    "main.js": "/aria/static/js/main.f58d235d.js",
+    "index.html": "/aria/index.html",
+    "main.2f5d045f.css.map": "/aria/static/css/main.2f5d045f.css.map",
+    "main.f58d235d.js.map": "/aria/static/js/main.f58d235d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f5d045f.css",
+    "static/js/main.f58d235d.js"
+  ]
+}
