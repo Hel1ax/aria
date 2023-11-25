@@ -19,11 +19,11 @@ function Header(){
         setWindowWidth(window.innerWidth);
     }
 
-    const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const handleSearchChange = (e) => {
         setSearchQuery(e?.target?.value);
     }
 
-    const handleSearchSubmit = (e: FormEvent) => {
+    const handleSearchSubmit = (e) => {
         e.preventDefault();
         // Добавьте здесь логику для обработки поискового запроса, например, перенаправление на страницу поиска
         console.log('Search submitted:', searchQuery);
