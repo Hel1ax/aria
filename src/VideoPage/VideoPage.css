@@ -3,6 +3,19 @@
     height: 480px;
 }
 
+@media (max-width: 800px){
+    .video-block iframe{
+        width: 480px;
+        height: 320px;
+    } 
+}
+
+@media (max-width: 512px){
+    .video-block iframe{
+        width: 320px;
+        height: 240px;
+    } 
+}
 
 .video-block{
     text-align: center;

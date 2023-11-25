@@ -71,13 +71,13 @@ ul {
 
 
 .links ul li,
-.shop ul li,
+.about ul li,
 .contact ul li{
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 .links ul li a:hover,
-.shop ul li a:hover,
+.about ul li a:hover,
 .contact ul li a:hover{
     color: #F15152;
 }
