@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/aria/static/css/main.107e30dd.css",
-    "main.js": "/aria/static/js/main.2391d095.js",
+    "main.js": "/aria/static/js/main.4c778606.js",
     "index.html": "/aria/index.html",
     "main.107e30dd.css.map": "/aria/static/css/main.107e30dd.css.map",
-    "main.2391d095.js.map": "/aria/static/js/main.2391d095.js.map"
+    "main.4c778606.js.map": "/aria/static/js/main.4c778606.js.map"
   },
   "entrypoints": [
     "static/css/main.107e30dd.css",
-    "static/js/main.2391d095.js"
+    "static/js/main.4c778606.js"
   ]
 }
