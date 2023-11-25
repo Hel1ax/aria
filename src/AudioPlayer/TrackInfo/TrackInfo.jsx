@@ -1,19 +1,7 @@
 import { RefObject } from "react";
 import './TrackInfo.css'
 
-interface TrackInfoProps{
-    currentTime: number;
-    setCurrentTime: React.Dispatch<React.SetStateAction<number>>;
-    duration: number;
-    currentTrack: RefObject<HTMLAudioElement>;
-    trackInfo: {
-        img: string,
-        title: string,
-        author: string
-    };
-}
-
-export function TrackInfo({trackInfo, currentTime, duration, currentTrack, setCurrentTime}: TrackInfoProps){
+export function TrackInfo({trackInfo, currentTime, duration, currentTrack, setCurrentTime}){
     return (
         <div className="track_info_container">
             <div className="timecontrol">

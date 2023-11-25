@@ -4,14 +4,7 @@ import { BiSkipNext, BiSkipPrevious } from 'react-icons/bi';
 
 import './TrackControl.css'
 
-interface TrackControlProps {
-    isPlaying: boolean;
-    playingButton: () => void;
-    handlePrevTrack: () => void;
-    handleNextTrack: () => void;
-}
-
-export function TrackConrol({isPlaying, playingButton, handlePrevTrack, handleNextTrack} : TrackControlProps){
+export function TrackConrol({isPlaying, playingButton, handlePrevTrack, handleNextTrack}){
     return (
         <div className='control_track_container'>
             <button className="playButton audio_button" onClick={handlePrevTrack}>

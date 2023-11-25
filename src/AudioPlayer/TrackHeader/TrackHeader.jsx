@@ -1,15 +1,7 @@
 import './TrackHeader.css'
 
-interface TrackHeaderProps{
-    trackInfo: {
-        img: string,
-        title: string,
-        author: string
-    };
-}
 
-
-function TrackHeader({trackInfo}: TrackHeaderProps){
+function TrackHeader({trackInfo}){
     return (
         <div className="track_header_container">
             <img className="musicCover" src={trackInfo.img} alt="" />

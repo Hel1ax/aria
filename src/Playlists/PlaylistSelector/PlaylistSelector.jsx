@@ -1,27 +1,6 @@
 import './PlaylistSelector.css'
 
-
-interface Track {
-    id: number;
-    title: string;
-    author: string;
-    audio: string;
-    img: string;
-}
-
-interface Playlist {
-    playlistID: number;
-    name: string;
-    playlistImg: string;
-    tracks: Track[];
-}
-
-interface PlaylistsSelectorProps{
-    playlists: Playlist[]
-    onSelectedPlaylist: (playlist: Playlist) => void;
-}
-
-function PlaylistSelector({playlists, onSelectedPlaylist} : PlaylistsSelectorProps){
+function PlaylistSelector({playlists, onSelectedPlaylist}){
 
     return (
     <div className="playlist-block">

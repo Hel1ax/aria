@@ -5,26 +5,9 @@ import { TrackInfo } from './TrackInfo/TrackInfo';
 import './AudioPlayer.css'
 import TrackHeader from './TrackHeader/TrackHeader';
 
-interface Track {
-    id: number;
-    title: string;
-    author: string;
-    audio: string;
-    img: string;
-}
 
-interface Playlist {
-    playlistID: number;
-    name: string;
-    playlistImg: string;
-    tracks: Track[];
-}
 
-interface AudioPlayerProps{
-    playlist: Playlist;
-}
-
-function AudioPlayer({playlist} : AudioPlayerProps) {
+function AudioPlayer({playlist}) {
     const [musicItems, setMusicItems] = useState(playlist.tracks);
 
     const [currentTrackIndex, setCurrentTrackIndex] = useState(0);

@@ -8,22 +8,8 @@ function Playlists(){
 
     const [selectedPlaylist, setSelectedPlaylist] = useState(playlists[0])
 
-    interface Track {
-        id: number;
-        title: string;
-        author: string;
-        audio: string;
-        img: string;
-    }
 
-    interface Playlist {
-        playlistID: number;
-        name: string;
-        playlistImg: string;
-        tracks: Track[];
-    }
-
-    const onSelectedPlaylist = (playlist: Playlist) => {
+    const onSelectedPlaylist = (playlist) => {
         setSelectedPlaylist(playlist)
     }
 

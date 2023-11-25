@@ -2,11 +2,7 @@ import {BsFillVolumeOffFill, BsFillVolumeDownFill, BsFillVolumeUpFill} from 'rea
 import React, {useState, useEffect, RefObject} from 'react'
 import './VolumeControl.css'
 
-interface VolumeControlProps{
-    currentTrack: RefObject<HTMLAudioElement>;
-
-}
-export function VolumeControl({ currentTrack }:VolumeControlProps){
+export function VolumeControl({ currentTrack }){
 
     const [isVisibleVolume, setVisibleVolume] = useState(false);
     const [volume, setVolume] = useState(20);
